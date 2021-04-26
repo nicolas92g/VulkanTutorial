@@ -2,7 +2,7 @@
 
 Avant de finaliser la création de la pipeline nous devons informer Vulkan des attachements des framebuffers utilisés 
 lors du rendu. Nous devons indiquer combien chaque framebuffer aura de buffers de couleur et de profondeur, combien de 
-samples il faudra utiliser avec chaque frambuffer et comment les utiliser tout au long des opérations de rendu. Toutes
+samples il faudra utiliser avec chaque framebuffer et comment les utiliser tout au long des opérations de rendu. Toutes
 ces informations sont contenues dans un objet appelé *render pass*. Pour le configurer, créons la fonction
 `createRenderPass`. Appelez cette fonction depuis `initVulkan` avant `createGraphicsPipeline`.
 
