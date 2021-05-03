@@ -1,6 +1,6 @@
 ## Introduction
 
-Nous avons maintenant un vertex buffer fonctionnel. Par contre il n'est pas dans la mémoire la plus optimale posible
+Nous avons maintenant un vertex buffer fonctionnel. Par contre il n'est pas dans la mémoire la plus optimale possible
 pour la carte graphique. Il serait préférable d'utiliser une mémoire `VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT`,
 mais de telles mémoires ne sont pas accessibles depuis le CPU. Dans ce chapitre nous allons créer deux vertex buffers.
 Le premier, un buffer intermédiaire (*staging buffer*), sera stocké dans de la mémoire accessible depuis le CPU, et
