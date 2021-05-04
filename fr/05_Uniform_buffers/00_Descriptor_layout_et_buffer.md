@@ -3,7 +3,7 @@
 Nous pouvons maintenant passer des données à chaque groupe d'invocation de vertex shaders. Mais qu'en est-il des
 variables globales? Nous allons enfin passer à la 3D, et nous avons besoin d'une matrice model-view-projection. Nous
 pourrions la transmettre avec les vertices, mais cela serait un gachis de mémoire et, de plus, nous devrions mettre à
-jour le vertex buffer à chaque frame, alors qu'il est très bien rangé dans se mémoire à hautes performances.
+jour le vertex buffer à chaque frame, alors qu'il est très bien rangé dans sa mémoire à hautes performances.
 
 La solution fournie par Vulkan consiste à utiliser des *descripteurs de ressource* (ou *resource descriptors*), qui
 font correspondre des données en mémoire à une variable shader. Un descripteur permet à des shaders d'accéder
